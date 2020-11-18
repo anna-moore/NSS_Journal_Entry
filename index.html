@@ -13,10 +13,34 @@
                 <!-- form to collect journal entries -->
                 <article>
                     <h2>Daily Journal</h2>
-                    <form>
-                        <fieldset> 
-                            <label for="journalDate"></label>
+                    <form action="">
+                        <!-- input field for date -->
+                        <fieldset class="date"> 
+                            <label for="journalDate">Date of Entry </label>
+                            <input type="date" name="journalDate" id="journalDate">
                         </fieldset>
+                        <!-- input field for concept -->
+                        <fieldset class="concept">
+                            <label for="conceptCovered">Concepts Covered </label>
+                            <input type="text" name="conceptCovered" id="conceptCovered">
+                        </fieldset>
+                        <!-- input field for journal entry -->
+                        <fieldset class="textarea">
+                            <label for="journalEntry">Journal Entry </label>
+                            <input type="textarea" name="journalEntry" id="journalEntry">
+                        </fieldset>
+                        <!-- input field for mood -->
+                        <fieldset class="mood">
+                            <label for="moodSelector">Mood of the Day </label>
+                            <select type="select" name="mood" id="mood">
+                                <option value="joyful">Joyful</option>
+                                <option value="energetic">Energetic</option>
+                                <option value="grounded">Grounded</option>
+                                <option value="tired">Low Energy</option>
+                                <option value="frustrated">Frustrated</option>
+                            </select>
+                        </fieldset>
+                        <button type="botton">Record Journal Entry</button>
                     </form>
                 </article>
                 <!-- list of past journal entries -->
