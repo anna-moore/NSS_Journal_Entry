@@ -23,7 +23,7 @@ const journal = [
     {
         id: 3,
         date: "07/28/2025",
-        concept: "Complex Flexbox",
+        concept: "Flexbox",
         entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain.",
         mood: "Sad"
     }

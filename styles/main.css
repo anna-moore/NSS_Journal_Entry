@@ -17,20 +17,26 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 } */
-
+.journalTitle{
+	text-align: center;
+}
+.form{
+	width:80%;
+	margin: auto;
+}
 .inputFlex{
 	display:flex;
 	flex-direction: column;
 	border: 1px solid black;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px;
 }
 .inputFlex input{
 	width: 150px;
 }
 
 .inputFlex textarea{
-	width: 65%;
+	width: 75%;
 }
 .inputFlex select{
 	width: 150px;
@@ -38,5 +44,10 @@ h1,h2,h3,h4,h5,h6 {
 .journal{
 	border: 1px solid black;
 	padding: 20px;
-	margin: 5px;
+	margin: 10px;
+}
+.entryLog{
+	/* text-align: center; */
+	width: 75%;
+	margin: auto;
 }
