@@ -17,14 +17,14 @@ const journal = [
         id: 2,
         date: "07/27/2025",
         concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain.",
         mood: "Sad"
     },
     {
         id: 3,
         date: "07/28/2025",
         concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain.",
         mood: "Sad"
     }
 ]

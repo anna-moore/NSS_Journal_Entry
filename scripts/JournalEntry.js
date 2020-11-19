@@ -5,10 +5,14 @@
  */
 export const JournalEntryComponent = (entry) => {
     return `
-        <section id="entry--${entry.id}" class="journalEntry">
-            <div class="date"> Date: ${entry.date}</div>
-            <div class="concept"> ${entry.concept}</div>
-            <div class= "text">${entry.entry}</div>
-        </section>
+        <article class="journal">
+            <section id="entry--${entry.id}" class="journalEntry">
+                <div class="concept"> <h3>${entry.concept}</h3></div>
+                <div class="date"> Date: ${entry.date}</div>
+                <div class= "text">${entry.entry}</div>
+                <button type="button">Edit</button>
+                <button type="button">Delete Entry</button>
+            </section>
+        </article>
     `
 }
