@@ -2,8 +2,8 @@
 
 /*Typography
 --------------------------------------------------------------*/
-body,
-button,
+body{background-color: cornflowerblue;}
+/* button,
 input,
 select,
 textarea {
@@ -16,4 +16,22 @@ textarea {
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
+} */
+
+.inputFlex{
+	display:flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 3px;
+	margin: 3px;
+}
+.inputFlex input{
+	width: 150px;
+}
+
+.inputFlex textarea{
+	width: 65%;
+}
+.inputFlex select{
+	width: 150px;
 }

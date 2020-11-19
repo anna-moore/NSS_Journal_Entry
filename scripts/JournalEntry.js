@@ -1,0 +1,1 @@
+//responsible for rendering a single journal entry.
