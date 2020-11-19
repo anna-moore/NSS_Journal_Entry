@@ -22,8 +22,8 @@ h1,h2,h3,h4,h5,h6 {
 	display:flex;
 	flex-direction: column;
 	border: 1px solid black;
-	padding: 3px;
-	margin: 3px;
+	padding: 5px;
+	margin: 5px;
 }
 .inputFlex input{
 	width: 150px;
@@ -34,4 +34,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .inputFlex select{
 	width: 150px;
+}
+.entryLog{
+	border: 1px solid black;
+	padding: 5px;
+	margin: 5px;
 }
