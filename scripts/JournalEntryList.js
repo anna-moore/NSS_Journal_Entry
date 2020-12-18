@@ -23,7 +23,7 @@ export const EntryListComponent = () => {
     // }
 
     //refactor with .map() instead of for .. of
-    contentElement.innerHTML += `
+    entryLog.innerHTML += `
         <article class="entry">
             ${entries.map( entry => JournalEntryComponent(entry)).join("")}
         </article>`
