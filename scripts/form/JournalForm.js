@@ -1,4 +1,5 @@
-import { saveJournalEntry } from "../JournalDataProvider"
+import { saveJournalEntry } from "../JournalDataProvider.js"
+import { JournalEntryComponent }  from "../JournalEntry.js"
 
 const formElement = document.querySelector(".form")
 const eventHub = document.querySelector(".container")
@@ -25,11 +26,13 @@ export const JournalForm = () =>{
             <div class="inputFlex">
                 <label for="moodSelector">Mood of the Day </label>
                 <select type="select" name="mood" id="mood">
-                    <option value="joyful">Joyful</option>
-                    <option value="energetic">Energetic</option>
-                    <option value="grounded">Grounded</option>
-                    <option value="tired">Low Energy</option>
-                    <option value="frustrated">Frustrated</option>
+                    <option value="0">Please select a mood...</option>
+                    <option value="joyful">😊 Joyful </option>
+                    <option value="energetic">😌 Energetic</option>
+                    <option value="grounded">🧘‍♀️ Grounded</option>
+                    <option value="tired">🥱 Low Energy</option>
+                    <option value="frustrated">🤔 Frustrated</option>
+                    <option value="overwhelm">🤯 Overwhelm</option>
                 </select>
             </div>
             <button id="journalEntryRecordBtn" type="button">Record Journal Entry</button>
