@@ -14,18 +14,17 @@ export const useJournalEntries = () => {
 }
 
 const eventHub = document.querySelector(".container")
-let entryArray = []
 
 export const getEntries = () => {
     return fetch("http://localhost:8088/entries") // Fetch from the API
         .then(response => response.json())  // Parse as JSON
         .then(parsedEntries => {
             // What should happen when we finally have the array?
-            entryArray = parsedEntries
+            journal = parsedEntries
         })
 }
 
-export const useEntries = () => entryArray.slice()
+
 
 // 
 const dispatchStateChangeEvent = ("change", event => {

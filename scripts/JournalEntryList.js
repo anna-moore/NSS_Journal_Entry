@@ -14,36 +14,37 @@ const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("click", (clickEvent) => {
     if(clickEvent.target.id === "journalEntryRecordBtn"){
-        const customEvent = new CustonEvent ("journalEntryRecorded")
+        const customEvent = new CustomEvent ("journalEntryRecorded")
         eventHub.dispatchEvent(customEvent)
     }
 })
 
-eventHub.addEventListener("journalEntryRecoreded", customEvent => {
+eventHub.addEventListener("journalEntryRecorded", customEvent => {
     EntryListComponent()
 })
 
 let journalEntryCards = []
 
-
 export const EntryListComponent = () => {
     // Use the journal entry data from the data provider component
-    getEntries().then(() => {
+    getEntries()
+    .then(() => {
         let entries = useJournalEntries()
-        for (const entry of entries) {
-            /*Invoke the component that returns an
-            HTML representation of a single entry*/
-            // entryLog.innerHTML += entryHTML.join("")
-            journalEntryCards.push(JournalEntryComponent(entry))
-        }
-        entryLog.innerHTML += journalEntryCards.join("")
-    }   
-    )
-    //refactor with .map() instead of for .. of
-    // entryLog.innerHTML += `
-    //     <article class="entry">
-    //         ${entries.map( entry => JournalEntryComponent(entry)).join("")}
-    //     </article>`
+        // for (const entry of entries) {
+        //     /*Invoke the component that returns an
+        //     HTML representation of a single entry*/
+        //     // entryLog.innerHTML += entryHTML.join("")
+        //     journalEntryCards.push(JournalEntryComponent(entry))
+        // }
+        // entryLog.innerHTML += journalEntryCards.join("")
+
+
+        // refactor with .map() instead of for .. of
+        entryLog.innerHTML += `
+            <article class="entry">
+                ${entries.map( entry => JournalEntryComponent(entry)).join("")}
+            </article>`
+    })
 
 }
 

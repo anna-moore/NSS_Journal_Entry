@@ -11,7 +11,7 @@ export const JournalEntryComponent = (entry) => {
                 <div class="date"> Date: ${entry.date}</div>
                 <div class= "text">${entry.entry}</div>
                 <button type="button">Edit</button>
-                <button type="button">Delete Entry</button>
+                <button id=">deleteEntry--${entry.id}" Delete </button>
             </section>
         </article>
     `
